@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="section">
+        <div class="section1">
+            <button onclick="window.location.href='/new'">New Blog</button>
+        </div>
+
+        <div class="allblogs">
+            <% if (locals.heading && locals.content) { %>
+                <div class="blog">
+                    <h2><%= heading %> </h2>
+                    <p><%= content %></p>
+                </div>
+            <% } %>
+        </div>
+        
+    </div>
+</body>
+</html>
